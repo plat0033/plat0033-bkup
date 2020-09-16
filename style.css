@@ -1,0 +1,137 @@
+* {box-sizing: border-box;}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.parallax {
+    background-image: url("https://picsum.photos/1200/800");
+    /* filter: blur(5px); */
+    height: 90%;
+
+    /* Parallax effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blackScreen {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.5);
+    z-index: 2;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    text-align: center;
+}
+
+.blackScreen h1 {
+    font-size: 3rem;
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+.blackScreen h2 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.blackScreen i {
+    font-size: 15rem;
+}
+
+.blackScreen img {
+    width: 250px;
+}
+
+nav {
+    background-color: #333;
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 2;
+}
+
+nav a {
+    color: #00FF00;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 30px;
+    transition: background-color .5s;
+}
+
+nav a:hover {
+    background-color: #00FF00;
+    color: #333;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .portfolio {
+    padding-top: 80px;
+  }
+
+  .portfolio {
+      max-width: 960px;
+      margin: auto;
+  }
+
+  .portfolio h1 {
+      margin-bottom: 0;
+  }
+
+  .portfolio-header {
+      display: flex;
+      text-align: justify;
+  }
+
+  .portfolio-icons {
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+  }
+
+  .portfolio-icons i {
+    padding: 0 1rem;
+    font-size: 3rem;
+    color: #333;
+  }
+
+  .projects {
+      display: flex;
+      flex-wrap: wrap;
+  }
+  .card {
+    position: relative;
+    width: 30rem;
+  }
+
+  .card img {
+      width: 100%;
+      height: 100%;
+  }
+
+  .card-body {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0,0,0, 0.7);
+    color: white;
+    padding: 0 1rem;
+    height: 10rem;
+    /* margin: 0; */
+
+    /* border-right: thick solid #333; */
+  }

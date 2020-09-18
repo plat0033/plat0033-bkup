@@ -11,24 +11,36 @@
 <body>
     <div class="parallax">
         <div class="blackScreen">
+            <div id="copyR">
+                Image by <a href="https://pixabay.com/users/Goumbik-3752482/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2717063">Goumbik</a>
+            </div>
             <img src="./images/foto-perfil.png" alt="">
             <!-- <i class="fas fa-user-circle"></i> -->
-            <div>
+            <div class="blackScreen-content">
                 <h1>David Plata</h1>
-                <h2>Web developer</h2>
-
-            </div>
+                <div>
+                    <div class="cutout-text">
+                        Web developer
+                    </div>
+                </div>
+                <div class="typewriter">
+                    <h1>>Pasionate about tech.</h1>
+                </div>
+                <div class="btn-portfolio">
+                    <h2><a href="#navbar">Portfolio</a></h2>
+                </div>
+            </div> 
             
         </div>
     </div>
     <nav id="navbar">
-        <a href="">Home</a>
-        <a href="">Portfolio</a>
-        <a href="">About</a>
+        <a href="#copyR">Home</a>
+        <a href="#navbar">Portfolio</a>
+        <!-- <a href="">About</a>
         <a href="">Resume</a>
-        <a href="">Contact</a>
+        <a href="">Contact</a> -->
     </nav>
-    <div class="portfolio">
+    <div id="portfolio" class="portfolio">
         <div>
             <h1>Portfolio</h1>
             <div class="portfolio-header">
@@ -74,9 +86,26 @@
                     <p>Description Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ducimus vero recusandae nulla labore placeat natus ipsam soluta.</p>
                 </div>
             </div>
+            <!-- <div class=""> -->
+                <div class="btn-moreProjects">
+                    <i class="fas fa-ellipsis-h"></i>   
+                </div>
+            <!-- </div> -->
         </div>
     </div>
-    <div class="parallax"></div>
+    <footer>
+        <div class="parallax2">
+            <div class="signature">
+                <div>Created by David Plata</div>
+                <div>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-codepen"></i>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+    
     <script src="app.js"></script>
 </body>
 </html>

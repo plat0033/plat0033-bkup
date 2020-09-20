@@ -75,10 +75,11 @@ body {
 }
 
 .site-header {
-  background: url(../images/hero.svg);
-  background-position: center bottom;
+  background: url(../images/icon-bg.png);
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
+
 }
 
 .site-header .animated {
@@ -214,4 +215,33 @@ body {
 
 .layout-social .layout-icon {
   font-size: 2em;
+}
+
+/* Personal adaptations */
+
+.fa-code {
+  color: white;
+  margin-right: .5rem;
+}
+
+#banner{
+  color: black;
+}
+
+#banner {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  text-align: right;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.small-size {
+  max-width: 200px;
+}
+
+.addPadding{
+  padding: 1rem;
 }

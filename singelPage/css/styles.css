@@ -74,12 +74,12 @@ h3 {
 /* Profile
 ------------------------------------*/
 header {
-  background: #2F3061;
-  color: #F7FFF7;
+  background-color: whitesmoke;
+  color: black;
 }
 
 /* Header */
-.slideshow-container {
+/* .slideshow-container {
   max-width: 1200px;
   margin: auto;
 }
@@ -93,10 +93,6 @@ header {
     top: 10%;
 }
 
-#myVideo{
-  /* height: 300; */
-}
-
 @keyframes fade {
   from { opacity: .4;
     left: 0%;
@@ -106,7 +102,55 @@ header {
     left: 10%;
     top: 10%;
   }
+} */
+.video-container{
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* height: 100%; */
 }
+
+
+.video-content{
+  /* margin-top: 5vh;
+  margin-right: 20px; */
+  margin: 0 auto;
+
+}
+
+#video{
+  /* position: absolute; */
+  /* right: 0;
+  top: 0;
+  z-index: 1; */
+
+  /* max-height: 20rem; */
+  width: 40rem;
+  object-fit: cover;
+  /* background-color: whitesmoke; */
+  
+}
+
+@media screen and (max-width: 960px ){
+  #video{
+    width: 30rem;
+  }
+
+  .video-content {
+    /* margin-top: 1vw; */
+  }
+
+  .video-content h2{
+    line-height: 2rem;
+  }
+  
+}
+
+
+
 
 
 /* Projects
@@ -207,4 +251,16 @@ footer {
   .contact-list a {
     padding: 5px;
   }
+
+  #video{
+    display: none;
+  }
+
+  .video-content {
+    margin: 1vw auto;
+
+  }
+
 }
+
+
